@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Productivity Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+header {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header p {
+    margin-top: 15px;
+    color: #cbd5e1;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 60px 10%;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 25px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.1);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>AI Productivity Hub</h1>
+    <p>Explore the most powerful AI tools for creators, developers, and innovators.</p>
+</header>
+
+<section class="tools">
+
+<div class="card">
+    <h3>ChatGPT</h3>
+    <p>Conversational AI for writing, coding, brainstorming, and automation.</p>
+    <button onclick="showInfo('ChatGPT by OpenAI is powerful for coding, writing and problem-solving.')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>Gemini</h3>
+    <p>Google’s multimodal AI built for research, reasoning, and productivity.</p>
+    <button onclick="showInfo('Gemini integrates deeply with Google Workspace tools.')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>Claude</h3>
+    <p>AI assistant focused on long context understanding and safety.</p>
+    <button onclick="showInfo('Claude is known for processing large documents efficiently.')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>Google Antigravity</h3>
+    <p>Experimental AI projects pushing future interaction design.</p>
+    <button onclick="showInfo('Antigravity represents Google experimental interfaces and research.')">Learn More</button>
+</div>
+
+<div class="card">
+    <h3>Cursor IDE</h3>
+    <p>AI-powered code editor that understands and writes code with you.</p>
+    <button onclick="showInfo('Cursor enhances developer productivity with AI-assisted coding.')">Learn More</button>
+</div>
+
+</section>
+
+<footer>
+    © 2026 AI Productivity Hub | Built using AI tools
+</footer>
+
+<script>
+function showInfo(message) {
+    alert(message);
+}
+</script>
+
+</body>
+</html>
